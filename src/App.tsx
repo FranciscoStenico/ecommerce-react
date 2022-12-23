@@ -1,7 +1,12 @@
-function App() {
+import Header from "./components/Header";
+import { AppContainer } from "./styles/App";
+
+const App = () => {
   return (
-    <div className="App">
-    </div>
+    <AppContainer>
+      <Header />
+      <div className="test"></div>
+    </AppContainer>
   );
 }
 
