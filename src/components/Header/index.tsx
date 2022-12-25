@@ -8,7 +8,7 @@ import {
 
 import CustomAnchor from "../CustomAnchor";
 import { ParentHeader } from "./styles";
-import BrandLogo from "../../assets/brand-logo.svg";
+import BrandLogo from "../../assets/utils/brand-logo.svg";
 import CustomInput from "../CustomInput";
 
 const Header = () => {
@@ -45,7 +45,10 @@ const Header = () => {
           >
             ENTRE OU CADASTRE-SE
           </CustomAnchor>
-          <CustomAnchor Icon={<RiHeart3Line repeatCount={2} size={21} />} hoverEffect>
+          <CustomAnchor
+            Icon={<RiHeart3Line repeatCount={2} size={21} />}
+            hoverEffect
+          >
             FAVORITOS
           </CustomAnchor>
           <CustomAnchor Icon={<RiShoppingBagLine size={21} />} hoverEffect>
@@ -65,7 +68,7 @@ const Header = () => {
           <a href="#void">MAQUIAGEM</a>
           <a href="#void">CORPO & BANHO</a>
           <a href="#void">VIDA SAUDÁVEL</a>
-          <a href="#void">ENERGIA & PERFORMACE</a>
+          <a href="#void">ENERGIA & PERFORMANCE</a>
         </nav>
       </footer>
     </ParentHeader>

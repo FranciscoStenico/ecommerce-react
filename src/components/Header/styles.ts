@@ -3,9 +3,11 @@ import styled from "styled-components";
 export const ParentHeader = styled.div`
   position: fixed;
   top: 0;
+  z-index: 2;
 
   min-width: 100%;
   background-color: var(--background);
+  box-shadow: 0px 4px 10px #0000001A;
 
   .header__head,
   .header__center,
@@ -47,7 +49,6 @@ export const ParentHeader = styled.div`
     align-items: center;
     height: 90px;
     background-color: var(--white-1);
-    box-shadow: 0px 4px 10px #00000014;
     
     .center__details {
       display: flex;
@@ -61,6 +62,7 @@ export const ParentHeader = styled.div`
     display: flex;
     justify-content: space-between;
     height: 49px;
+    z-index: -1;
 
     font-size: 14px;
     font-weight: 600;
@@ -72,6 +74,7 @@ export const ParentHeader = styled.div`
       width: 63.8%;
       justify-content: space-between;
       align-self: center;
+      align-items: center;
       gap: 5.5%;
     }
   }

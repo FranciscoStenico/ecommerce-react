@@ -9,3 +9,14 @@ export interface IAnchorProps extends PropsWithChildren {
   hasProfile?: boolean;
   profileName?: string;
 }
+
+export interface IButtonProps extends PropsWithChildren {
+  handler?: (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => void;
+  color?: string;
+  hoverColor?: string;
+}
+
+export interface ICustomTextProps extends PropsWithChildren {
+  Icon: ReactNode;
+  noLimit?: boolean;
+}

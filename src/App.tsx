@@ -1,13 +1,12 @@
-import Header from "./components/Header";
+import AppRoutes from "./router/index.routes";
 import { AppContainer } from "./styles/App";
 
 const App = () => {
   return (
     <AppContainer>
-      <Header />
-      <div className="test"></div>
+      <AppRoutes />
     </AppContainer>
   );
-}
+};
 
 export default App;

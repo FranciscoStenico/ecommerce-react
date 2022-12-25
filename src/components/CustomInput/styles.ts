@@ -6,9 +6,9 @@ export const InputContainer = styled.div`
   justify-content: space-between;
   justify-self: center;
   height: 37px;
-  width: 27.7%;
+  width: 40%;
   padding: 0 2.7%;
-  margin-left: 4.3%;
+  margin: 0 4.3%;
   border-radius: 100rem;
   background-color: var(--grey);
 

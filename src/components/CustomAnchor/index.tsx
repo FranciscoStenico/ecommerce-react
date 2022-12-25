@@ -17,6 +17,7 @@ const CustomAnchor = ({
       fontSize={fontSize || "12px"}
       color={color || "var(--grey-1)"}
       hover={hoverEffect}
+      stack={3}
     >
       {Icon}
       <div className="interactive-data">
