@@ -18,5 +18,25 @@ export interface IButtonProps extends PropsWithChildren {
 
 export interface ICustomTextProps extends PropsWithChildren {
   Icon: ReactNode;
+  gap?: number | string;
+  fontSize?: number | string;
+  textDecoration?: string;
   noLimit?: boolean;
 }
+
+export interface ICustomCarousel {
+  title: string;
+  rows?: number;
+  items: ICarouselItems[];
+}
+
+interface ICarouselItems {
+  id: string;
+  image?: string;
+  name: string;
+  rating: 1 | 2 | 3 | 4 | 5;
+  price: number;
+  previousPrice: number;
+}
+
+export type IRatingProps = { rating: number };

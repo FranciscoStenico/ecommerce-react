@@ -21,4 +21,7 @@ export interface IHomepageStyles {
 
 export interface ICustomTextStyles {
   width: number | string;
+  gap?: number | string;
+  fontSize?: number | string;
+  textDecoration?: string;
 }

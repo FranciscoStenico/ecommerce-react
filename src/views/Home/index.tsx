@@ -1,13 +1,18 @@
 import BasePage from "..";
 import Button from "../../components/Button";
-import CustomText from "../../components/CustomText";
+import CustomText from "../../components/CustomMessage";
 import { StyledHomepage } from "./styles";
 
 /* Icons */
 // arrows
-import { RiArrowLeftSLine, RiArrowRightSLine } from 'react-icons/ri'
+import { RiArrowLeftSLine, RiArrowRightSLine } from "react-icons/ri";
 // advantages
-import { RiBankCard2Line, RiTruckLine, RiSwapLine, RiDropboxFill } from "react-icons/ri";
+import {
+  RiBankCard2Line,
+  RiTruckLine,
+  RiSwapLine,
+  RiDropboxFill,
+} from "react-icons/ri";
 
 /* SVG's */
 import ProductProfile from "../../assets/products/dazzle-foundation.svg";
@@ -37,7 +42,11 @@ const HomePage = () => {
           <CustomText Icon={<RiTruckLine size={30} />}>
             FRETE GRÁTIS nas compras acima de R$ 49,00 para todo o Brasil
           </CustomText>
-          <CustomText Icon={<RiSwapLine size={30} style={{transform: "rotate(90deg)"}} />}>
+          <CustomText
+            Icon={
+              <RiSwapLine size={30} style={{ transform: "rotate(90deg)" }} />
+            }
+          >
             Hinode Prime: Receba em casa todo mês com 20% OFF
           </CustomText>
           <CustomText Icon={<RiDropboxFill size={30} />}>
