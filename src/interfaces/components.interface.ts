@@ -26,17 +26,24 @@ export interface ICustomTextProps extends PropsWithChildren {
 
 export interface ICustomCarousel {
   title: string;
-  rows?: number;
-  items: ICarouselItems[];
+  filter: string;
 }
 
-interface ICarouselItems {
-  id: string;
+export interface ICarouselItems {
+  id: number;
   image?: string;
   name: string;
   rating: 1 | 2 | 3 | 4 | 5;
   price: number;
-  previousPrice: number;
+  previousPrice: number | null;
+  sale: number | null;
+  department: string;
 }
 
-export type IRatingProps = { rating: number };
+export interface ICardProps {
+  item: ICarouselItems;
+}
+
+export type IRatingProps = { rating: ICarouselItems["rating"] };
+
+export type ICurrencyProps = { value: ICarouselItems["price"] };

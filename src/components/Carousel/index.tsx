@@ -2,13 +2,20 @@ import { RiEyeLine } from "react-icons/ri";
 import CustomMessage from "../CustomMessage";
 import { ICustomCarousel } from "../../interfaces/components.interface";
 import { StyledCarousel } from "./styles";
-import RatingStars from "../RatingStar";
-import Button from "../Button";
+import products from "../../database";
+import ProductCard from "../ProductCard";
 
-const Carousel = ({ title, items }: ICustomCarousel) => {
+const Carousel = ({ title, filter }: ICustomCarousel) => {
+  const filteredProducts = products.filter(
+    (product) => product.department === filter
+  );
+
+  const firstRow = filteredProducts.slice(0, 4);
+  const secondRow = filteredProducts.length > 4 && filteredProducts.slice(4);
+
   return (
     <StyledCarousel>
-      <h2 className="carousel__title">{title}</h2>
+      {title && <h2 className="carousel__title">{title}</h2>}
       <CustomMessage
         Icon={<RiEyeLine />}
         fontSize={12}
@@ -18,25 +25,17 @@ const Carousel = ({ title, items }: ICustomCarousel) => {
         Ver todos
       </CustomMessage>
       <ul className="carousel__content">
-        {items.map((product) => {
-          return (
-            <li key={product.id} className="content__card">
-              <figure className="card__image">
-                <img src={product.image} alt={product.name} />
-              </figure>
-              <h3 className="card__title">{product.name}</h3>
-              <RatingStars rating={product.rating} />
-              <h4 className="card__price">
-                R${Math.floor(product.price)},
-                <span className="price_float-field">
-                  {(product.price - Math.floor(product.price)) * 100}
-                </span>
-              </h4>
-              <Button>COMPRAR</Button>
-            </li>
-          );
+        {firstRow.map((product) => {
+          return <ProductCard key={product.id} item={product} />;
         })}
       </ul>
+      {secondRow && (
+        <ul className="carousel__content">
+          {secondRow.map((product) => {
+            return <ProductCard key={product.id} item={product} />;
+          })}
+        </ul>
+      )}
     </StyledCarousel>
   );
 };

@@ -17,6 +17,7 @@ import {
 /* SVG's */
 import ProductProfile from "../../assets/products/dazzle-foundation.svg";
 import showcase1 from "../../assets/masks/showcase1.svg";
+import Carousel from "../../components/Carousel";
 
 const HomePage = () => {
   return (
@@ -53,6 +54,7 @@ const HomePage = () => {
             Garanta mais economia com frete inteligente
           </CustomText>
         </section>
+        <Carousel title="VIDA SAUDÁVEL" filter="fragrances" />
       </StyledHomepage>
     </BasePage>
   );
