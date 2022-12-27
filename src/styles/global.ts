@@ -30,14 +30,13 @@ export const GlobalStyles = createGlobalStyle`
     /* Background-image */
     --departments-hover-in: linear-gradient(
         181.19deg, 
-        #0000002e 1.02%, 
-        #00000091 28.75%, 
-        #000000bd 67.96%, 
-        #000000b5 101.26%
+        #0000002e 0%, 
+        #00000091 29%, 
+        #000000bd 67%, 
+        #000000b5 100%
     );
     --departments-hover-out: linear-gradient(
         181.19deg, 
-        #00000000 1.02%, 
         #00000000 28.75%, 
         #0000001a 67.96%, 
         #000000af 101.26%

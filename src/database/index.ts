@@ -102,7 +102,7 @@ const products: ICarouselItems[] = [
     price: 150,
     previousPrice: null,
     sale: null,
-    department: "highlights",
+    department: "highlight",
   },
   {
     id: 7,
@@ -112,7 +112,7 @@ const products: ICarouselItems[] = [
     price: 85,
     previousPrice: null,
     sale: null,
-    department: "highlights",
+    department: "highlight",
   },
   {
     id: 8,

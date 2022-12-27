@@ -5,6 +5,7 @@ export const StyledCarousel = styled.div`
   flex-direction: column;
   gap: 40px;
   margin: 0 151px 65px;
+  padding: 0 65px;
   align-items: center;
   align-self: center;
   position: relative;
@@ -23,11 +24,11 @@ export const StyledCarousel = styled.div`
   }
 
   .arrow--backward {
-    left: 0;
+    left: -5.5%;
   }
 
   .arrow--foward {
-    right: 0;
+    right: -5.5%;
   }
 
   .carousel__more {

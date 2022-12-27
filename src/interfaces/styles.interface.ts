@@ -36,5 +36,5 @@ export interface IProductCardStyles {
 
 export interface IHighlightsStyles {
   background: string;
-  fontSize: number;
+  width: number | false;
 }

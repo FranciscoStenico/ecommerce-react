@@ -65,12 +65,16 @@ export const StyledCard = styled.li<IProductCardStyles>`
   }
 
   .card__price {
+    position: relative;
+    width: fit-content;
     display: flex;
     font-family: "Inter", sans-serif;
     font-size: 22px;
     font-weight: 700;
 
     .price_float-field {
+      position: absolute;
+      right: -14px;
       font-size: 14px;
     }
   }

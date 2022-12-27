@@ -73,14 +73,13 @@ const HomePage = () => {
         <section className="brand__departments">
           <h2 className="departments__title">ISSO PODE SER DO SEU INTERESSE</h2>
           <ul className="departments__list">
-            <DepartmentCard src={department1}>MAQUIAGENS</DepartmentCard>
+            {/* <DepartmentCard src={department1}>MAQUIAGENS</DepartmentCard>
             <DepartmentCard src={department2}>FRAGRÂNCIAS</DepartmentCard>
-            <DepartmentCard src={department3}>
-              ENERGIA & PERFORMANCE
-            </DepartmentCard>
-            <DepartmentCard src={department4}>CORPO & BANHO</DepartmentCard>
+            <DepartmentCard src={department3}>ENERGIA & PERFORMANCE</DepartmentCard>
+            <DepartmentCard src={department4}>CORPO & BANHO</DepartmentCard> */}
           </ul>
         </section>
+        <Carousel highlight />
         <Carousel title="MAIS DESEJADOS" filter="most-desired" />
         <Carousel title="VIDA SAUDÁVEL" filter="healthy-life" />
         <section className="home__showcase home__showcase-2">

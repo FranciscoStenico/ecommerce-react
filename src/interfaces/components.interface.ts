@@ -31,8 +31,9 @@ export interface ICustomDepartmentCard extends PropsWithChildren {
 
 export interface ICustomCarousel {
   title?: string;
-  filter: string;
+  filter?: string;
   inverse?: boolean;
+  highlight?: boolean;
 }
 
 export interface ICarouselItems {

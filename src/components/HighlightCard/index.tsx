@@ -8,7 +8,7 @@ import RatingStars from "../RatingStar";
 import { toCurrency } from "../../utils/toCurrency";
 
 const HighlightCard = ({ item }: ICardProps) => {
-  const customSize = item.name.length / 2;
+  const customSize = item.name.length < 30 && (item.name.length / 2);
   const installmentPrice = toCurrency(item.price / 2);
 
   const Currency = ({ value }: ICurrencyProps) => {
@@ -24,9 +24,8 @@ const HighlightCard = ({ item }: ICardProps) => {
       </h4>
     );
   };
-
   return (
-    <StyledHighlight background={item.image || ""} fontSize={customSize}>
+    <StyledHighlight background={item.image || ""} width={customSize}>
       <section className="card__details">
         <h3 className="details__title">{item.name}</h3>
         <RatingStars rating={item.rating} />
