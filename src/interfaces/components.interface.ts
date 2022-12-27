@@ -25,6 +25,10 @@ export interface ICustomTextProps extends PropsWithChildren {
   className?: string;
 }
 
+export interface ICustomDepartmentCard extends PropsWithChildren {
+  src: string;
+}
+
 export interface ICustomCarousel {
   title?: string;
   filter: string;

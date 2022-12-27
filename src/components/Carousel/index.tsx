@@ -21,27 +21,29 @@ const Carousel = ({ title, filter, inverse }: ICustomCarousel) => {
   return (
     <StyledCarousel>
       <RiArrowLeftSLine size={80} className="arrow arrow--backward" />
-      {title && <h2 className="carousel__title">{title}</h2>}
-      <CustomMessage
-        Icon={<RiEyeLine />}
-        fontSize={12}
-        gap={8}
-        textDecoration="underline"
-        className="carousel__more"
-        noLimit
-      >
-        Ver todos
-      </CustomMessage>
+      {title && (
+        <>
+          <h2 className="carousel__title">{title}</h2>
+          <CustomMessage
+            Icon={<RiEyeLine />}
+            fontSize={12}
+            gap={8}
+            textDecoration="underline"
+            className="carousel__more"
+            noLimit
+          >
+            Ver todos
+          </CustomMessage>
+        </>
+      )}
       <ul className="carousel__content">
-        {inverse ? (
-          secondRow.map((product) => {
-            return <ProductCard key={product.id} item={product} />;
-          })
-        ) : (
-          firstRow.map((product) => {
-            return <ProductCard key={product.id} item={product} />;
-          })
-        )}
+        {inverse
+          ? secondRow.map((product) => {
+              return <ProductCard key={product.id} item={product} />;
+            })
+          : firstRow.map((product) => {
+              return <ProductCard key={product.id} item={product} />;
+            })}
       </ul>
       <div className="carousel__pagination">
         <RiCheckboxBlankCircleLine size={11} />

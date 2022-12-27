@@ -6,7 +6,9 @@ export const StyledCarousel = styled.div`
   gap: 40px;
   margin: 0 151px 65px;
   align-items: center;
+  align-self: center;
   position: relative;
+  max-width: 1440px;
 
   .arrow {
     position: absolute;

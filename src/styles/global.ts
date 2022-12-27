@@ -27,6 +27,21 @@ export const GlobalStyles = createGlobalStyle`
     /* Borders */
     --card-content-border: 0.5px solid #F2F2F2;
 
+    /* Background-image */
+    --departments-hover-in: linear-gradient(
+        181.19deg, 
+        #0000002e 1.02%, 
+        #00000091 28.75%, 
+        #000000bd 67.96%, 
+        #000000b5 101.26%
+    );
+    --departments-hover-out: linear-gradient(
+        181.19deg, 
+        #00000000 1.02%, 
+        #00000000 28.75%, 
+        #0000001a 67.96%, 
+        #000000af 101.26%
+    );
   }
 
   html, body, div, span, applet, object, iframe,

@@ -16,6 +16,10 @@ export interface IHomepageStyles {
     showcase1?: string;
     showcase2?: string;
     showcase3?: string;
+    departments1?: string;
+    departments2?: string;
+    departments3?: string;
+    departments4?: string;
   };
 }
 
