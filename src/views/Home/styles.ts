@@ -48,7 +48,7 @@ export const StyledHomepage = styled.section<IHomepageStyles>`
   .home__buyer-advantages {
     display: flex;
     justify-content: space-between;
-    margin: 20px 0;
+    margin: 20px 0 96px;
     padding: 35px 151px;
     background-color: var(--grey-100);
   }

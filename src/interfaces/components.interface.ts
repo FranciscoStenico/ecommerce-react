@@ -22,11 +22,13 @@ export interface ICustomTextProps extends PropsWithChildren {
   fontSize?: number | string;
   textDecoration?: string;
   noLimit?: boolean;
+  className?: string;
 }
 
 export interface ICustomCarousel {
-  title: string;
+  title?: string;
   filter: string;
+  inverse?: boolean;
 }
 
 export interface ICarouselItems {

@@ -25,3 +25,12 @@ export interface ICustomTextStyles {
   fontSize?: number | string;
   textDecoration?: string;
 }
+
+export interface IProductCardStyles {
+  width: string;
+}
+
+export interface IHighlightsStyles {
+  background: string;
+  fontSize: number;
+}

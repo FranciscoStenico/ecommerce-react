@@ -54,7 +54,13 @@ const HomePage = () => {
             Garanta mais economia com frete inteligente
           </CustomText>
         </section>
-        <Carousel title="VIDA SAUDÁVEL" filter="fragrances" />
+        <Carousel title="MAIS VENDIDOS" filter="most-selled" />
+        <Carousel title="MAIS DESEJADOS" filter="most-desired" />
+        <Carousel title="VIDA SAUDÁVEL" filter="healthy-life" />
+        <Carousel title="CORPO E BANHO" filter="body&bath" />
+        <Carousel filter="body&bath" inverse />
+        <Carousel title="FRAGRÂNCIAS" filter="fragrances" />
+        <Carousel filter="fragrances" inverse />
       </StyledHomepage>
     </BasePage>
   );

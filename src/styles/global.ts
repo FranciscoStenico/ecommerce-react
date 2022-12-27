@@ -3,23 +3,26 @@ import { createGlobalStyle } from "styled-components";
 export const GlobalStyles = createGlobalStyle`
   :root {
     /* Color palette */
-    --white-1:    #FFFFFF;
-    --white-2:    #FDFDFD;
-    --white-3:   #fdfdfda0;
-    --grey:       #E1DCD5;
-    --grey-1:     #333333;
-    --background: #E5E5E5;
-    --gray-6:    #f7f7f780;
-    --grey-100:   #F5F6FA;
-    --brand-1:    #AA8232;
-    --brand-2:    #CF960D;
-    --brand-3:    #D5B69A;
-    --brand-4:    #F2994A;
-    --red:        #B90032;
-    --tile-blue:  #009BAA;
-    --blue:       #00002D;
-    --black:      #000000;
-    --black-fade:#00000050;
+    --white-1:      #FFFFFF;
+    --white-2:      #FDFDFD;
+    --white-3:     #fdfdfda0;
+    --grey:         #E1DCD5;
+    --grey-1:       #333333;
+    --grey-1-fade: #3333337b;
+    --grey-3:       #828282;
+    --background:   #E5E5E5;
+    --gray-6:      #f7f7f780;
+    --gray-600:     #f2f2f2;
+    --grey-100:     #F5F6FA;
+    --brand-1:      #AA8232;
+    --brand-2:      #CF960D;
+    --brand-3:      #D5B69A;
+    --brand-4:      #F2994A;
+    --red:          #B90032;
+    --tile-blue:    #009BAA;
+    --blue:         #00002D;
+    --black:        #000000;
+    --black-fade:  #00000050;
 
     /* Borders */
     --card-content-border: 0.5px solid #F2F2F2;
