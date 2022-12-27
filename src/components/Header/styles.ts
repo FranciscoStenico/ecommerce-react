@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const ParentHeader = styled.div`
+export const ParentHeader = styled.header`
   position: fixed;
   top: 0;
   z-index: 2;

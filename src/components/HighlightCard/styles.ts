@@ -3,16 +3,17 @@ import { IHighlightsStyles } from "../../interfaces/styles.interface";
 
 export const StyledHighlight = styled.li<IHighlightsStyles>`
   display: flex;
+  position: relative;
   flex-direction: column;
   justify-content: space-between;
   padding: 12px 12px 46px 12px;
   width: 587px;
   height: 781px;
+  box-sizing: border-box;
 
   background-image: url(${({ background }) => background});
   background-repeat: no-repeat;
   background-size: cover;
-  transition: background-image 500ms ease;
 
   .card__details {
     display: flex;
@@ -61,13 +62,5 @@ export const StyledHighlight = styled.li<IHighlightsStyles>`
   button {
     align-self: center;
     background-color: var(--white-1);
-  }
-
-  @keyframes shade-in {
-    from {
-    }
-    to {
-      background-color: yellow;
-    }
   }
 `;

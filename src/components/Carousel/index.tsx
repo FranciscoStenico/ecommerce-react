@@ -5,17 +5,32 @@ import {
   RiCheckboxBlankCircleLine,
 } from "react-icons/ri";
 import CustomMessage from "../CustomMessage";
-import { ICustomCarousel } from "../../interfaces/components.interface";
+import {
+  ICarouselItems,
+  ICustomCarousel,
+} from "../../interfaces/components.interface";
 import { StyledCarousel } from "./styles";
 import products from "../../database";
 import ProductCard from "../ProductCard";
 import HighlightCard from "../HighlightCard";
 
 const Carousel = ({ title, filter, inverse, highlight }: ICustomCarousel) => {
-  const filteredProducts = products.filter(({ department }) => department === (filter || "highlight"));
+  const filteredProducts = products.filter(
+    ({ department }) => department === (filter || "highlight")
+  );
 
-  const firstRow = filteredProducts.slice(0, 4);
-  const secondRow = filteredProducts.reverse().slice(0, 4);
+  const pagination = (array: ICarouselItems[]) => {
+    let pageSplitter: ICarouselItems[][] = [];
+    for (let i = 0; i < array.length; i++) {
+      const currentPage = Math.floor(i / 4);
+
+      !pageSplitter[currentPage] && pageSplitter.push([]);
+      pageSplitter[currentPage].push(array[i]);
+    }
+
+    return pageSplitter;
+  };
+  const pages = pagination(filteredProducts);
 
   return (
     <StyledCarousel>
@@ -37,17 +52,17 @@ const Carousel = ({ title, filter, inverse, highlight }: ICustomCarousel) => {
       )}
       {highlight ? (
         <ul className="carousel__content">
-          {firstRow.map((product) => {
+          {pages[0].map((product) => {
             return <HighlightCard item={product} key={product.id} />;
           })}
         </ul>
       ) : (
         <ul className="carousel__content">
           {inverse
-            ? secondRow.map((product) => {
+            ? pages[1].map((product) => {
                 return <ProductCard key={product.id} item={product} />;
               })
-            : firstRow.map((product) => {
+            : pages[0].map((product) => {
                 return <ProductCard key={product.id} item={product} />;
               })}
         </ul>

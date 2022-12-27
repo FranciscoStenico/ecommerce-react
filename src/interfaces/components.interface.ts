@@ -51,6 +51,10 @@ export interface ICardProps {
   item: ICarouselItems;
 }
 
+export interface IFooterProps {
+  background: string;
+}
+
 export type IRatingProps = { rating: ICarouselItems["rating"] };
 
 export type ICurrencyProps = { value: ICarouselItems["price"] };

@@ -33,8 +33,8 @@ export const StyledCarousel = styled.div`
 
   .carousel__more {
     position: absolute;
-    right: 151px;
     top: 30px;
+    right: 65px;
     display: flex;
     align-items: center;
     cursor: pointer;

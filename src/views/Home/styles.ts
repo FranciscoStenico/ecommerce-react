@@ -79,7 +79,7 @@ export const StyledHomepage = styled.section<IHomepageStyles>`
     }
   }
 
-  .home__showcase-2 {
+  .home__showcase--2 {
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
@@ -93,11 +93,79 @@ export const StyledHomepage = styled.section<IHomepageStyles>`
     background-position: center;
 
     .showcase__description {
-      font-family: 'Roboto';
-      font-size: 24px;
-      font-weight: 400;
       width: 538px;
       line-height: 137.69%;
+    }
+  }
+
+  .showcase__description {
+    font-family: "Roboto";
+    font-size: 24px;
+    font-weight: 400;
+  }
+
+  .home__showcase--3 {
+    display: grid;
+    grid-template-columns: 53.7% 46.3%;
+    margin-bottom: 96px;
+
+    .showcase__background {
+      display: grid;
+      place-items: center;
+      position: relative;
+
+      background-image: url(${({ src: { showcase3 } }) => showcase3});
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+
+      .showcase__product {
+        position: absolute;
+      }
+
+      #sc3-p1 {
+        z-index: 1;
+        margin: 0 270px 60px 0;
+      }
+
+      #sc3-p2 {
+        margin-left: 270px;
+      }
+    }
+
+    .showcase__info--3 {
+      color: var(--black);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 32px;
+      padding: 0 75px;
+
+      .showcase__description {
+        width: 441px;
+      }
+    }
+
+    button {
+      background-color: var(--black);
+      color: var(--white-1);
+
+      &:hover {
+        background-color: inherit;
+        color: var(--black);
+      }
+    }
+  }
+
+  #different-background {
+    background-color: var(--grey-2);
+    margin-bottom: 118px;
+
+    & > div {
+      padding-top: 105px;
+      .card__image {
+        background-color: var(--grey-200);
+      }
     }
   }
 `;

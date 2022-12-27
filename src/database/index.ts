@@ -7,7 +7,7 @@ import sublimeCologne from "../assets/products/sublime-cologne.svg";
 import facialPowder from "../assets/products/facial-powder.svg";
 /* highlights */
 import venixLor from "../assets/products/venyx-lor.svg";
-import multvitWomen from "../assets/products/multvit-women.svg";
+import multvitWomen from "../assets/products/multvit-women.png";
 /* most-desired */
 import modelingGel from "../assets/products/modeling-gel.svg";
 import vanillaShake from "../assets/products/vanilla-shake.svg";
@@ -236,7 +236,7 @@ const products: ICarouselItems[] = [
   },
   {
     id: 20,
-    image: modelingGel4,
+    image: modelingGel1,
     name: "Corps Lígnea Body Contour Gel Modelador 500g",
     rating: 4,
     price: 60,
@@ -246,16 +246,6 @@ const products: ICarouselItems[] = [
   },
   {
     id: 21,
-    image: modelingGel3,
-    name: "Corps Lígnea Body Contour Gel Modelador 500g",
-    rating: 4,
-    price: 60,
-    previousPrice: null,
-    sale: null,
-    department: "body&bath",
-  },
-  {
-    id: 22,
     image: modelingGel2,
     name: "Corps Lígnea Body Contour Gel Modelador 500g",
     rating: 4,
@@ -265,8 +255,18 @@ const products: ICarouselItems[] = [
     department: "body&bath",
   },
   {
+    id: 22,
+    image: modelingGel3,
+    name: "Corps Lígnea Body Contour Gel Modelador 500g",
+    rating: 4,
+    price: 60,
+    previousPrice: null,
+    sale: null,
+    department: "body&bath",
+  },
+  {
     id: 23,
-    image: modelingGel1,
+    image: modelingGel4,
     name: "Corps Lígnea Body Contour Gel Modelador 500g",
     rating: 4,
     price: 60,
@@ -316,26 +316,16 @@ const products: ICarouselItems[] = [
   },
   {
     id: 28,
-    image: spotForher,
-    name: "Spot For Her 75ml",
+    image: empireGold,
+    name: "Empire Gold 100ml",
     rating: 4,
-    price: 129,
+    price: 150,
     previousPrice: null,
     sale: null,
     department: "fragrances",
   },
   {
     id: 29,
-    image: ellaJuicy,
-    name: "Colônia Ella Juicy 100ml",
-    rating: 4,
-    price: 129,
-    previousPrice: null,
-    sale: null,
-    department: "fragrances",
-  },
-  {
-    id: 30,
     image: lattitudeOrigini,
     name: "Colônia Lattitude Origini 100ml",
     rating: 4,
@@ -345,11 +335,21 @@ const products: ICarouselItems[] = [
     department: "fragrances",
   },
   {
-    id: 31,
-    image: empireGold,
-    name: "Empire Gold 100ml",
+    id: 30,
+    image: ellaJuicy,
+    name: "Colônia Ella Juicy 100ml",
     rating: 4,
-    price: 150,
+    price: 129,
+    previousPrice: null,
+    sale: null,
+    department: "fragrances",
+  },
+  {
+    id: 31,
+    image: spotForher,
+    name: "Spot For Her 75ml",
+    rating: 4,
+    price: 129,
     previousPrice: null,
     sale: null,
     department: "fragrances",
