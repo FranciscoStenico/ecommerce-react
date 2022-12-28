@@ -158,6 +158,10 @@ export const StyledHomepage = styled.section<IHomepageStyles>`
   }
 
   #different-background {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    width: 100%;
     background-color: var(--grey-2);
     margin-bottom: 118px;
 

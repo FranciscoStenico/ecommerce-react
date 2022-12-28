@@ -1,3 +1,4 @@
+import { useState } from "react";
 import {
   RiArrowLeftSLine,
   RiArrowRightSLine,
@@ -15,6 +16,8 @@ import ProductCard from "../ProductCard";
 import HighlightCard from "../HighlightCard";
 
 const Carousel = ({ title, filter, inverse, highlight }: ICustomCarousel) => {
+  const [currentAxis, setCurrentAxis] = useState(0);
+
   const filteredProducts = products.filter(
     ({ department }) => department === (filter || "highlight")
   );
@@ -32,9 +35,22 @@ const Carousel = ({ title, filter, inverse, highlight }: ICustomCarousel) => {
   };
   const pages = pagination(filteredProducts);
 
+  const changePage = (switcher: "next" | "previous") => () => {
+    switch (switcher) {
+      case "next":
+        setCurrentAxis(currentAxis === 90 ? 0 : currentAxis + 30);
+        break;
+      case "previous":
+        setCurrentAxis(currentAxis === 0 ? 90 : currentAxis - 30);
+        break;
+    }
+  };
+
   return (
-    <StyledCarousel>
-      <RiArrowLeftSLine size={80} className="arrow arrow--backward" />
+    <StyledCarousel axis={currentAxis}>
+      <button className="arrow__button arrow__button--backward" onClick={changePage("previous")}>
+        <RiArrowLeftSLine size={80} className="arrow arrow--foward" />
+      </button>
       {title && (
         <>
           <h2 className="carousel__title">{title}</h2>
@@ -68,12 +84,14 @@ const Carousel = ({ title, filter, inverse, highlight }: ICustomCarousel) => {
         </ul>
       )}
       <div className="carousel__pagination">
-        <RiCheckboxBlankCircleLine size={11} />
-        <RiCheckboxBlankCircleLine size={11} />
-        <RiCheckboxBlankCircleLine size={11} />
-        <RiCheckboxBlankCircleLine size={11} />
+        <RiCheckboxBlankCircleLine size={20} />
+        <RiCheckboxBlankCircleLine size={20} />
+        <RiCheckboxBlankCircleLine size={20} />
+        <RiCheckboxBlankCircleLine size={20} />
       </div>
-      <RiArrowRightSLine size={80} className="arrow arrow--foward" />
+      <button className="arrow__button arrow__button--foward" onClick={changePage("next")}>
+        <RiArrowRightSLine size={80} className="arrow arrow--foward" />
+      </button>
     </StyledCarousel>
   );
 };

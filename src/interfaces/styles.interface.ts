@@ -38,3 +38,7 @@ export interface IHighlightsStyles {
   background: string;
   width: number | false;
 }
+
+export interface ICarouselStyles {
+  axis: number;
+}
