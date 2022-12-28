@@ -1,8 +1,5 @@
 import { StyledHighlight } from "./styles";
-import {
-  ICardProps,
-  ICurrencyProps,
-} from "../../interfaces/components.interface";
+import { ICardProps, ICurrencyProps } from "../../interfaces/components.interface";
 import Button from "../Button";
 import RatingStars from "../RatingStar";
 import { toCurrency } from "../../utils/toCurrency";

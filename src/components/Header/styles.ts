@@ -1,13 +1,13 @@
 import styled from "styled-components";
 
-export const ParentHeader = styled.header`
+export const StyledParentHeader = styled.header`
   position: fixed;
   top: 0;
   z-index: 2;
 
   min-width: 100%;
   background-color: var(--background);
-  box-shadow: 0px 4px 10px #0000001A;
+  box-shadow: 0px 4px 10px #0000001a;
 
   .header__head,
   .header__center,
@@ -49,7 +49,7 @@ export const ParentHeader = styled.header`
     align-items: center;
     height: 90px;
     background-color: var(--white-1);
-    
+
     .center__details {
       display: flex;
       width: 40%;

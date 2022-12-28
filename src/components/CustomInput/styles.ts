@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const InputContainer = styled.div`
+export const StyledInput = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;

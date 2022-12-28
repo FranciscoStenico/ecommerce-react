@@ -1,4 +1,5 @@
 import {RiInstagramLine, RiYoutubeLine, RiFacebookFill} from 'react-icons/ri'
+
 import PrivacyPolice from "../../assets/utils/brand-footer.svg"
 import { StyledFooter } from "./styles";
 

@@ -1,15 +1,15 @@
 import { IButtonProps } from "../../interfaces/components.interface";
-import { CustomButton } from "./styles";
+import { StyledButton } from "./styles";
 
 const Button = ({ children, color, hoverColor, handler }: IButtonProps) => {
   return (
-    <CustomButton
+    <StyledButton
       onClick={handler ? handler : () => {}}
       hoverColor={hoverColor}
       color={color}
     >
       {children}
-    </CustomButton>
+    </StyledButton>
   );
 };
 

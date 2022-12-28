@@ -1,15 +1,7 @@
 import { useState } from "react";
-import {
-  RiArrowLeftSLine,
-  RiArrowRightSLine,
-  RiEyeLine,
-  RiCheckboxBlankCircleLine,
-} from "react-icons/ri";
+import { RiArrowLeftSLine, RiArrowRightSLine, RiEyeLine, RiCheckboxBlankCircleLine } from "react-icons/ri";
 import CustomMessage from "../CustomMessage";
-import {
-  ICarouselItems,
-  ICustomCarousel,
-} from "../../interfaces/components.interface";
+import { ICarouselItems, ICustomCarousel } from "../../interfaces/components.interface";
 import { StyledCarousel } from "./styles";
 import products from "../../database";
 import ProductCard from "../ProductCard";

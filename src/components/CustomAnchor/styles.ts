@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { IAnchorStyle } from "../../interfaces/styles.interface";
 
-export const AnchorContainer = styled.div`
+export const StyledAnchor = styled.div`
   display: flex;
   gap: ${({ flexGap }: IAnchorStyle) =>
     typeof flexGap === "number" ? `${flexGap}px` : flexGap};

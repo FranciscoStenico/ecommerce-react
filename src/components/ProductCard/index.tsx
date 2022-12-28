@@ -1,9 +1,10 @@
 import { useState } from "react";
 import { RiHeart3Fill, RiHeart3Line } from "react-icons/ri";
-import { ICardProps, ICurrencyProps } from "../../interfaces/components.interface";
-import { toCurrency } from "../../utils/toCurrency";
+
 import Button from "../Button";
 import RatingStars from "../RatingStar";
+import { ICardProps, ICurrencyProps } from "../../interfaces/components.interface";
+import { toCurrency } from "../../utils/toCurrency";
 import { StyledCard } from "./styles";
 
 const ProductCard = ({ item }: ICardProps) => {

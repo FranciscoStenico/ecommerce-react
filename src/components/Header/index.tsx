@@ -1,19 +1,13 @@
-import {
-  RiUserHeartLine,
-  RiUserLine,
-  RiHeart3Line,
-  RiShoppingBagLine,
-  RiMenuFill,
-} from "react-icons/ri";
+import { RiUserHeartLine, RiUserLine, RiHeart3Line, RiShoppingBagLine, RiMenuFill } from "react-icons/ri";
 
 import CustomAnchor from "../CustomAnchor";
-import { ParentHeader } from "./styles";
+import { StyledParentHeader } from "./styles";
 import BrandLogo from "../../assets/utils/brand-logo.svg";
 import CustomInput from "../CustomInput";
 
 const Header = () => {
   return (
-    <ParentHeader>
+    <StyledParentHeader>
       <header className="header__head">
         <h5 className="head__about">A Empresa</h5>
         <div className="head__contact">
@@ -71,7 +65,7 @@ const Header = () => {
           <a href="#void">ENERGIA & PERFORMANCE</a>
         </nav>
       </footer>
-    </ParentHeader>
+    </StyledParentHeader>
   );
 };
 

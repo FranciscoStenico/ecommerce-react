@@ -1,4 +1,4 @@
-# Teste Técnico - E-Commerce Hinode
+# **[Teste Técnico - E-Commerce Hinode](https://wicomm-hinode-ecommerce.vercel.app/home)**
 
 - O teste foi realizado em ReactJS, utilizando-se `styled-components` para a estilização dos componentes e das páginas.
 
@@ -7,12 +7,11 @@
 - Para a impementação dos ícones foi usada a biblioteca `react-icons`, mais especificamente a lib interna [Remix Icons](https://react-icons.github.io/react-icons/icons?name=ri), a qual foi notado que também foi utilizada no template fornecido.
 
 - Todo o código foi projetado utilizando-se da biblioteca `react-router-dom` visando ser uma aplicação facilmente escalável, fornecendo uma central de rotas para a implementação de futuras novas pages.
-
 ___
 
-## Rodando a aplicação
+## Rodando a aplicação localmente
 
-1. Primeiramente clone este repositório para seu repositório local:
+1. Primeiramente, no site gitHub, clone o projeto para seu repositório local:
 ```bash
 git clone git@github.com:FranciscoStenico/ecommerce-react.git .
 ```

@@ -1,18 +1,11 @@
 import { IAnchorProps } from "../../interfaces/components.interface";
-import { AnchorContainer } from "./styles";
+import { StyledAnchor } from "./styles";
 
 const CustomAnchor = ({
-  children,
-  Icon,
-  gap,
-  fontSize,
-  color,
-  hoverEffect,
-  hasProfile,
-  profileName,
+  children, Icon, gap, fontSize, color, hoverEffect, hasProfile, profileName,
 }: IAnchorProps) => {
   return (
-    <AnchorContainer
+    <StyledAnchor
       flexGap={gap || "11px"}
       fontSize={fontSize || "12px"}
       color={color || "var(--grey-1)"}
@@ -28,7 +21,7 @@ const CustomAnchor = ({
           {children}
         </a>
       </div>
-    </AnchorContainer>
+    </StyledAnchor>
   );
 };
 

@@ -5,17 +5,10 @@ import Carousel from "../../components/Carousel";
 import { StyledHomepage } from "./styles";
 
 /* Icons */
-// arrows
 import { RiArrowLeftSLine, RiArrowRightSLine } from "react-icons/ri";
-// advantages
-import {
-  RiBankCard2Line,
-  RiTruckLine,
-  RiSwapLine,
-  RiDropboxFill,
-} from "react-icons/ri";
+import { RiBankCard2Line, RiTruckLine, RiSwapLine, RiDropboxFill } from "react-icons/ri";
 
-/* SVG's */
+/* Assets */
 import ProductProfile from "../../assets/products/dazzle-foundation.svg";
 import showcase1 from "../../assets/masks/showcase1.png";
 import showcase2 from "../../assets/masks/showcase2.jpg";
@@ -27,14 +20,10 @@ import department2 from "../../assets/masks/department2.png";
 import department3 from "../../assets/masks/department3.png";
 import department4 from "../../assets/masks/department4.png";
 import DepartmentCard from "../../components/DepartmentCard";
-import { CustomButton } from "../../components/Button/styles";
+import { StyledButton } from "../../components/Button/styles";
 
 const HomePage = () => {
-  const bgOptions = {
-    showcase1,
-    showcase2,
-    showcase3,
-  };
+  const bgOptions = { showcase1, showcase2, showcase3 };
 
   return (
     <BasePage>
@@ -91,9 +80,9 @@ const HomePage = () => {
             Confira nossa linha de produtos para o corpo. Hidratantes, loções e
             desodorantes para os cuidados com seu corpo.
           </p>
-          <CustomButton color="var(--white-1)" hoverColor="var(--grey-1)">
+          <StyledButton color="var(--white-1)" hoverColor="var(--grey-1)">
             CONHEÇA NOSSOS PRODUTOS
-          </CustomButton>
+          </StyledButton>
         </section>
         <Carousel title="CORPO E BANHO" filter="body&bath" />
         <Carousel filter="body&bath" inverse />
@@ -118,9 +107,9 @@ const HomePage = () => {
               Escolha a sua fragrância masculina favorita e desperte as melhores
               sensações.
             </p>
-            <CustomButton color="var(--black)">
+            <StyledButton color="var(--black)">
               CONHEÇA NOSSOS PRODUTOS
-            </CustomButton>
+            </StyledButton>
           </div>
         </section>
         <Carousel title="FRAGRÂNCIAS" filter="fragrances" />
