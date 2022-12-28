@@ -32,9 +32,9 @@ ___
 
 ## Observações
 
-Relacionado ao [template](https://www.figma.com/file/Rj1lpa9K0SYpjBLKyFCAT5/Wicomm-Teste-Desenvolvedor-Front-End?node-id=1%3A34&t=dS1yxILRjunfC89k-0) fornecido, foi buscada uma forma de utilizar a fonte `Aktiv Grotesk Ex` dentro da aplicação através do Google Fonts, bem como baixando a mesma de um site externo e inserindo-a no CSS global do projeto, mas todas as tentativas gratuitas não surtiram efeito.
+- Relacionado ao [template](https://www.figma.com/file/Rj1lpa9K0SYpjBLKyFCAT5/Wicomm-Teste-Desenvolvedor-Front-End?node-id=1%3A34&t=dS1yxILRjunfC89k-0) fornecido, foi buscada uma forma de se utilizar a fonte `Aktiv Grotesk Ex` dentro da aplicação através do Google Fonts, bem como baixando a mesma de um site externo e inserindo-a no CSS global do projeto através da propriedade `@font-face`, mas todas as tentativas gratuitas não surtiram efeito. A mesma estava sendo utilizada em trechos do layout como preço dos cards e também no rodapé. Para sua substituição foram adotadas as fontes `Inter` (para o valor dentro dos cards) e `Roboto` (para o rodapé).
 
-A mesma estava sendo utilizada em trechos do layout como preço dos cards e também no rodapé. Para sua substituição foram adotadas as fontes `Inter` (para o valor dentro dos cards) e `Roboto`(para o rodapé).
+- Foi inserido um "fake database" em `.src/database` para ser feito o consumo dos dados fornecidos pelo template. Foi optado por padrão o uso de imagens no formato `*.svg`, abrindo-se exceções para o formato `*.png` ou `*.jpg` nos casos em que o arquivo continha mais de 10mb de tamanho em script de vetores. Caso não fosse adotada a exceção, haveria uma grande chance de ocorrer crashes e/ou até mesmo sequer ser executada.
 
 ___
 
