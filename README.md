@@ -1,5 +1,7 @@
 # **[Teste Técnico - E-Commerce Hinode](https://wicomm-hinode-ecommerce.vercel.app/home)**
 
+## [Acesso ao deploy do projeto](https://wicomm-hinode-ecommerce.vercel.app/home)
+
 - O teste foi realizado em ReactJS, utilizando-se `styled-components` para a estilização dos componentes e das páginas.
 
 - Todo o desenvolvimento do layout foi feito seguindo o template fornecido no [Figma](https://www.figma.com/file/Rj1lpa9K0SYpjBLKyFCAT5/Wicomm-Teste-Desenvolvedor-Front-End?node-id=1%3A34&t=dS1yxILRjunfC89k-0).
